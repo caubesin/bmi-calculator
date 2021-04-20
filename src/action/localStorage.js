@@ -1,6 +1,7 @@
 export const getData = (key) => {
     if(!localStorage) return;
     try {
+        if(localStorage.getItem(key) === null) return [];
         return JSON.parse(localStorage.getItem(key));
     }
     catch(e) {
