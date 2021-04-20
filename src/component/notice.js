@@ -26,7 +26,6 @@ function Notice(props) {
             return <p>Bạn bị béo phì cấp độ III rồi nên giảm cân gấp !</p>
         }
     }
-    console.log(data);
     return(
         <div className="notice">
             <h2>7 Day Data</h2>
