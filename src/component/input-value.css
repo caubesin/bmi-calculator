@@ -1,0 +1,72 @@
+.input-data {
+    position: relative;
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.input-data-col {
+    position: relative;
+    width: calc(100%/2);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#weight {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.input-data-col label {
+    width: 90%;
+    font-size: calc(6px + 1vmin);
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.input-data-col input{
+    position: relative;
+    width: 90%;
+    height: 45px;
+    padding : 0 15px;
+    font-size: calc(10px + 1vmin);
+    border-radius: 20px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.input-data button {
+    padding: 15px 50px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: calc(8px + 1vmin);
+    font-weight: bold;
+    border : none;
+    background-color: #3047c8;
+    color: rgb(184, 184, 184);
+    cursor: pointer;
+    outline: none;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.input-data button:disabled {
+    color: black;
+    background-color: #ccc;
+    cursor: default;
+}
+
+
+
+.input-data button:not([disabled]):hover {
+    opacity: 1;
+    color: white;
+}

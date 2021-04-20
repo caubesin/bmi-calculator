@@ -1,0 +1,107 @@
+.notice {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice h2 {
+    margin-top: 30px;
+    font-size: calc(15px + 2vmin)
+}
+
+.notice-container {
+    position: relative;
+    width: 75%;
+    padding: 20px 0;
+    background-color: #1f3a67;
+    border-radius: 10px;
+    margin : 40px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice-message {
+    position: relative;
+    width: 45%;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #274881;
+}
+
+.notice-message button {
+    position: absolute;
+    background-color: #e74c3c;
+    top: -12px;
+    right: -12px;
+    width: 30px;
+    height: 30px;
+    font-size: calc(8px + 1vmin);
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.notice-message p {
+    width: 100%;
+    font-size: calc(10px + 1vmin);
+    padding: 20px 5px;
+    margin: 10px 0;
+    background-color: #172b4d36;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.notice-message h3 {
+    font-size: calc(15px + 1vmin);
+}
+
+.notice-message h4 {
+    width: 100%;
+    font-size: calc(6px + 1vmin);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.btn-undo {
+    font-size: calc(8px + 1vmin);
+    padding: 15px 65px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3f51b5;
+    color: white;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.btn-undo:hover {
+    background-color: white;
+    border: 1px solid #3f51b5;
+    color: #3f51b5;
+}
+
+@media screen and (max-width: 1125px){
+    .notice-container {
+        width: 80%;
+        flex-direction: column;
+    }
+    .notice-message {
+        width: 80%;
+    }
+}
